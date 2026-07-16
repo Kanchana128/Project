@@ -1,75 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Web Dev Portfolio</title>
 </head>
 
 <body>
+  <header>
+    <nav>
+      <div class="logo">KN</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class=" Theme-Toggle" aria-label="Toggle Theme" title="Toggle Theme">🌙</button>
+      <button class=" Theme-Toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+  <main>
+    <section id="hero" class="hero section">
+      <h1>Hi, I'm kanchana👋</h1>
+      <p>I'm a passionate web developer from bangalore.</p>
+      <div class="hero-buttons">
+        <a href="#projects">View My Work</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+    </section>
+    <section id="about" class="about section">
+      <h2>About Me</h2>
+      <figure class="profile-image">
+        <img src="KANCHANAAAA.jpeg" alt="Profile Photo" width="200">
+        <figcaption>Kanchana-Web Developer</figcaption>
+      </figure>
+      <p>I'am a passionate web develper</p>
+    </section>
+    <section id="skills" class="skills-section">..</section>
+    <h2> MySkills</h2>
+    <div class="skills-grid">
+      <div class="skill-item" data-level="90">HTML</div>
+      <div class="skill-item" data-level="80">CSS</div>
+      <div class="skill-item" data-level="70">JavaScript</div>
+      <div class="skill-item" data-level="60">React</div>
+    </div>
+    </section>
+    <section id="projects" class="projects-section">
+      <h2>My Projects</h2>
+      <div class="project-grid"></div>
+      <article class="project-card" data-category="web">
+        <img src="project1.png" alt="wheather App screenshot" width="300" height="200">
+        <h3>Weather App</h3>
+        <p>Real weather dashboard with location-based forecasts.</p>
+        <div class="project-tags">
+          <span>React</span>
+          <span>API</span>
+        </div>
+        <a href="#">Live Demo</a>
+        <a href="#">GitHub</a>
+      </article>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        </div>
+        <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>
+      &copy; 2024 Kanchana. .built with HTML and CSS.
+    </p>
+    <nav aria-label="social-media links">
+      <a href="" target="_blank">LinkedIn</a>
+      <a href="" target="_blank">GitHub</a>
+    </nav>
 
-  <p>
-    <a href="#">About</a>
-    <a href="#">Skills</a>
-    <a href="#">Projects</a>
-    <a href="#">Contact</a>
-  </p>
-
-  <h1>Hi, I'm [kanchana] 👋</h1>
-  <p>I'm a passionate web developer from [City].</p>
-  <p><a href="#">Hire Me</a></p>
-
-  <h2>About Me</h2>
-  <img src="KANCHANAAAA.jpeg" alt="Profile PHOTO" width="200">
-  <p>I love building things on the web. Currently learning HTML, CSS, JavaScript, and React.</p>
-
-  <h3>My Learning Journey</h3>
-  <ol>
-    <li>Learned the basics of HTML</li>
-    <li>Practiced CSS to style my pages</li>
-    <li>Learned JavaScript basics</li>
-    <li>Started learning React</li>
-  </ol>
-
-  <h2>My Skills</h2>
-  <ul>
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>JavaScript</li>
-    <li>React</li>
-  </ul>
-
-  <h2>Web Projects</h2>
-
-  <h3>Project 1</h3>
-  <p>Description of project 1</p>
-  <p><a href="#">View Project</a></p>
-
-  <h2>Contact Me</h2>
-  <p>Email: <a href="mailto:you@gmail.com">kanchana11gowda@gmail.com</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/yourname">Kanchana Nagaraju</a></p>
-  <p>GitHub: <a href="https://github.com/yourusername">kanchana128</a></p>
-  <p></p>
-  <h2>Contact me</h2>
-  <p>have a project in mind ? Let"s Talk!</p>
-  <form action="submit_form.php" method="post">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
-
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-    <form action="">
-      <!-- Subject Dropdown -->
-      <label for="subject">Subject:</label>
-      <select name="subject" id="subject">
-        <option value="">--select a value--</option>
-        <option value="hire">I want to hire you</option>
-        <option value="collab">I want to collaborate</option>
-        <option value="others">Others</option>
-      </select><br><br>
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-      <input type="submit" value="Submit">
-    </form>
 </body>
 
 </html>
